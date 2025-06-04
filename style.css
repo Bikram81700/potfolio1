@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 .main{
@@ -126,86 +127,86 @@ ul li a:hover{
 .icons ion-icon:hover{
     color: rgb(59,174,209);
 }
-/* ABOUT stats section */
-#about.stats-container {
-  display: flex;
-  background-color: #3b362f;
-  border-radius: 12px;
-  padding: 20px 40px;
-  justify-content: space-around;
+
+span{
+    color: rgb(230,104,59);
+}
+.about{
+  display:flex ;
+  justify-content: center;
   align-items: center;
-  color: #fff;
-  max-width: 800px;
-  margin: 50px auto;
+  gap: 5rem;
+  background:grey ;
+
 }
 
-.stat-box {
-  text-align: center;
-  padding: 0 20px;
+.about-img{
+    width: 40vw;
 }
-
-.number {
-  font-size: 28px;
-  font-weight: bold;
-  color: #ff6a00;
-  display: block;
+.heading{
+    text-align: center;
+    font-size: 4.5rem;
 }
-
-.label {
-  font-size: 16px;
-  color: #fff;
+.about-content h2{
+  text-align: left;
+  line-height:1.2 ;
 }
-
-.divider {
-  height: 50px;
-  width: 1px;
-  background-color: #aaa;
-}
-
-
-/* SERVICES SECTION */
-.container {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 2rem 1rem;
-  text-align: center;
-}
-
-.section-title {
-  font-size: 1.8rem;
-  margin-bottom: 0.5rem;
-  color: orange;
-}
-
-.section-desc {
-  color: #aaa;
-  margin-bottom: 2rem;
-  font-size: 0.95rem;
-  line-height: 1.5;
-}
-
-.card {
-  background-color: #1a1a1a;
-  border-radius: 10px;
-  padding: 1.5rem;
-  margin-bottom: 1.5rem;
-  box-shadow: 0 0 10px rgba(255, 165, 0, 0.1);
-}
-
-.icon {
+.about-content h3{
   font-size: 2rem;
-  color: orange;
+}
+.about-content p{
+  font-size: 1.6rem;
+  margin: 2rem 0 3rem;
+}
+
+.services-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.service-box {
+  flex: 1 1 300px;
+  background: #fff;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 .2rem 1rem rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.service-box i {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  color: #007BFF;
+}
+
+.service-box h3 {
+  font-size: 2rem;
   margin-bottom: 1rem;
 }
 
-.card-title {
-  color: orange;
+.service-box p {
   font-size: 1.2rem;
-  margin-bottom: 0.5rem;
+  margin-bottom: 1.5rem;
 }
 
-.card-desc {
-  color: #aaa;
-  font-size: 0.95rem;
-  line-height: 1.5;
+.btn {
+  display: inline-block;
+  padding: 0.8rem 1.5rem;
+  background-color: #007BFF;
+  color: white;
+  text-decoration: none;
+  border-radius: 0.5rem;
+}
+
+.services {
+  min-height: 100vh; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  background-color: #f5f5f5; 
 }
